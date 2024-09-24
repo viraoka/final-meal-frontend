@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const getAllMeals = (setMeal) => {
-    axios.get("https://final-meal-backend.onrender.com")
+    axios.get("http://localhost:4000/")
     .then(({data}) => {console.log(data)
     setMeal(data)
     })
